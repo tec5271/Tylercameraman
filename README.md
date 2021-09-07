@@ -1,2 +1,2 @@
 # Tylercameraman
-This will be my semester project in DIGIT 100
+This will be my growing portfolio throughout the DIGIT program
