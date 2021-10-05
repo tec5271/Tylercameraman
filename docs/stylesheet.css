@@ -5,3 +5,17 @@ body {
 figure {width:30%; margin:auto; padding-top: 1vw; padding-bottom: 1vw;}
 figcaption {font-style: italic; font-size: smaller;}
 img{max-width:500px; width:100%}
+
+ul.menuB {
+  list-style-type: none;
+  
+}
+
+ul.menuB li {display:inline; font-size: 2vw; padding:2vw;}
+
+section#menu {padding:2vw; }
+ 
+ .button { border:2px; border-style:solid; border-color:red; padding:2vw; background-color:#E6E6FA; color:yellow; width:10%; display:inline;
+ border-radius: 20px;
+ }
+ 
