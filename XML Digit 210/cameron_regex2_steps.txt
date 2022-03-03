@@ -1,0 +1,11 @@
+([IVXLC]+)\s\n
+
+<sonnetnumber>\1</sonnetnumber>\n\n
+
+^\s{2}(\w)
+
+\1
+
+^(.+)$
+
+<line>\1</line>

@@ -1,0 +1,25 @@
+Regex Steps for Movie list
+
+Find '&' 
+
+Replace all '&' with '&amp;'
+
+Find "'^.+" to highlight each row individually
+
+Replace with '<movie>\0</movie>' to tag the entire line as a movie description as a whole
+
+Find '(<movie>)(.+?)\t' to get the information that is the first column of information in the series
+
+Replace with '\1<title>\2</title>' in order to tag that first column as the title section of data
+
+</title>\d+?\t find digits that are after title end tag
+
+\1<year>\2</year>
+
+(<time)(>\d+)\s+(min)
+
+\1 unit="\3"\2
+
+(</country>)(.+?)(</movie>)
+
+\1<time>\2</time>\3
