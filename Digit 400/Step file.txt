@@ -1,0 +1,17 @@
+Find & Replace &amp;
+Find (.+)(\n\n) Replace <p>\1</p>\2
+Find \n\n\n Replace \n\n Gave rid of extra spacing
+Find <p>(CHAPTER .+)</p> Replace <heading>\1</heading> added start and end tags to the CHAPTER roman numeral headings
+Find (</heading>)(.+?)(<heading>) Replace \1<chapter>\2</chapter>\3 Added start and end tags to the entirety of chapter context
+Find (<p>)(") Replace \1 \2 added a space in front of all quotation marks to make regex easier
+Find (")(.+?)(") Replace <q>\1\2\3</q> added start and end tag to quotes
+Find (\d August)Replace <date>\1</date> Added date tags to the month of august
+
+
+Date Regex: 
+
+\d+\w*\s[A-Z]\w+\.?
+
+Time Regex: 
+
+\d+:\d+
