@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ARCH 12, 1909. FRIDAY</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>COPYRIGHT 1908, BY FRIENDSHIP CALENDAR CO. NEW BRITAIN, CONN.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+     <figure><head>Omega</head><figDesc>A graphic of the greek letter 'Omega' place to the left of the beginning of the hand printed text</figDesc></figure>
+     <figure><head>Molly</head><figDesc>A illustraition of Molly in snowshoes</figDesc></figure>
+      <body>
+         <p>MOLLY ON SNOWSHOES THAT MY.WEiR GoT.</p>
+         <p>PRETTY PicTURE IS IT NOT?!</p>
+         <p>Love from Molly.</p>
+      </body>
+  </text>
+</TEI>

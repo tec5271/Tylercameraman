@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="cameronschem_4.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+    <title type="intro">Gingersnaps</title>
+
+    <introduction>These crunchy, spicy rounds with their cracked, sugary tops are equally at home
+        dunked in tea, coffee, or milk, and frequently enjoyed during the November/December holiday
+        season. But they're just as welcome on a mellow, golden, late-September afternoon, with a
+        comfortable lounge chair and a large glass of fresh-squeezed lemonade.</introduction>
+    <directions depth="basic"><instruct s="1">Prep</instruct>
+        <time amount="minutes">12 mins</time>
+        <instruct s="2">Bake</instruct>
+        <time amount="minutes">11 to 13 mins</time> Total <time amount="minutes">23 mins</time>
+        Yield about 5 dozen cookies</directions>
+    <title>Gingersnaps</title>
+    <ingredTitle>Ingredients</ingredTitle>
+
+    <title type="cookie">Cookies</title>
+
+    <ingred measurement="cup">3/4 cup (138g) vegetable shortening*</ingred>
+    <ingred measurement="cup">1 cup (198g) granulated sugar</ingred>
+    <ingred measurement="teaspoon">1/2 teaspoon salt</ingred>
+    <ingred measurement="teaspoon">2 teaspoons baking soda</ingred>
+    <ingred food="egg">1 large egg</ingred>
+    <ingred measurement="cup">1/3 cup (113g) molasses</ingred>
+    <ingred measurement="cup">2 1/3 cups (280g) King Arthur Unbleached All-Purpose Flour</ingred>
+    <ingred measurement="teaspoon">1 to 2 teaspoons ginger</ingred>
+    <ingred measurement="teaspoon">1/2 teaspoon cloves</ingred>
+    <ingred measurement="teaspoon">1 teaspoon cinnamon</ingred>
+
+    <tip>*Can you substitute butter for the vegetable shortening? Yes; but the cookies will be soft,
+        not crisp. </tip>
+    <title type="coating">Coating</title>
+
+    <ingred measurement="cup">1/4 cup (50g) granulated sugar</ingred>
+    <ingred measurement="teaspoon">1 teaspoon cinnamon</ingred>
+
+    <title type="h2">Instructions</title>
+
+    <directions depth="explained">
+        <step follow="heat">Preheat the oven to 375°F. Lightly grease (or line with parchment) two
+            baking sheets.</step>
+
+        <step follow="action">Beat together the shortening,<ingred> sugar,</ingred>
+            <ingred>salt,</ingred> and <ingred>baking soda.</ingred></step>
+
+        <step follow="action">Beat in the egg, then the molasses.</step>
+
+        <step follow="action">Add the <ingred>flour</ingred> and <ingred>spices,</ingred> beating to
+            make a smooth, fairly stiff dough.</step>
+
+        <step follow="howTo">To make the coating, combine the <ingred>sugar</ingred> and
+                <ingred>cinnamon,</ingred> and place in a shallow pan or dish.</step>
+
+        <step follow="action">Drop the dough in 1" balls into the cinnamon-sugar mixture; a teaspoon
+            cookie scoop is perfect here.</step>
+
+        <step follow="action">Roll the balls in the sugar to coat, then transfer them to the
+            prepared baking sheets, leaving at least 1 1/2" between them; they'll spread as they
+            bake.</step>
+
+        <step follow="heat">Bake the cookies for <time amount="minutes">11 minutes,</time> for
+            cookies that are crisp around the edges, and "bendy" in the center. Bake for <time
+                amount="minutes">13 minutes,</time> for cookies that are crisp/crunchy all the way
+            through.</step>
+
+        <step follow="action">Remove the cookies from the oven, and cool right on the pan, or on a
+            rack. Cool completely, then store tightly wrapped, at room temperature.</step>
+    </directions>
+</xml>

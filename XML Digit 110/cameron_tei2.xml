@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>January 30, 1909.</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>COPYRIGHT 1908, BY FRIENDSHIP CALENDAR CO.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>NEW BRITAIN, CONN.</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+     <figure><head>J in artistic graphic</head></figure>
+     <figure><graphic url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2041.jpg"></graphic><figDesc>A man with a mustache in bed</figDesc></figure>
+      <body>
+         <p>signature E.R.B.</p>
+         <p>That damned old clock</p>
+         <p> gives me a (blank) </p>
+      </body>
+  </text>
+</TEI>

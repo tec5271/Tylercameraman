@@ -1,0 +1,18 @@
+start = label 
+label = element root {meta, poem}
+meta = element meta {title, author, publication, source} 
+poem = element poem {line}
+line = element line {n, text}
+n = attribute n {xsd:integer}
+title = element title {media, text}
+media = attribute media {"poem" | "journal"}
+author = element author {text}
+publication = element publication {title, pub, date} 
+pub = element pub {Place}
+Place = attribute Place {"London"}
+date = element date {when, text}
+when = attribute when {xsd:date | xsd:gYearMonth | xsd:gYear}
+source = element source {ref, text}
+ref = element ref {target, text}
+target = attribute target {text}
+

@@ -1,0 +1,72 @@
+# DIGIT 110 RELAX NG TEST INSTRUCTIONS:  
+# * Save these test files according to our standard file naming conventions for Canvas submissions.
+# * Make the schema well-formed and document with  # comments where you made change(s). 
+# * Then, associate the schema with the XML file we have provided for the exam.
+# * Next, correct the schema code so that it validates the XML (happy green oXygen for both documents) and document briefly with # comments what you changed and why.
+#  **NOTE**: DO NOT CHANGE the markup in the XML file, except to add your schema line!
+#
+# TIPS: 
+# There are 13 critical errors in this Relax-NG schema that will make oXygen's error-checking box RED. Only a few of them will appear at first in the Relax NG. 
+# More will be revealed when you associate the schema with the XML file.
+# Your goal is to correct each of these errors.
+
+# First, correct the schema file so it "turns green" in oXygen and write a comment to document each correction.
+# Then, associate your corrected  schema with the XML (and remove the original schema line). 
+# At that point the other validation errors will become evident in the XML file.)
+# Remember to split your oXygen screen (Window -> Tile Editors Vertically), and carefully examine the XML to see how 
+# the elements are written. 
+# DO NOT CHANGE THE MARKUP IN THE XML FILE. Make ALL corrections in the Relax NG Schema to make the XML valid according to the schema.
+# Save the schema and use the red checkmark in oXygen to check the validation as you go.
+#
+# **NOTE**: Because this is an exam, you are expected to complete this assignment _individually_ 
+# without discussion or help from other students. Any such collaboration will be considered to be plagiarism under the penalties stated on the syllabus.
+# *  GITHUB: While you may ask basic questions on the class Slack, GitHub or by email, the instructor's responses will
+# be correspondingly minimal: that is, I will not be telling you the complete answers. Similarly, for any
+# questions about take-home exams on GitHub, students _must not_ reply to each other.
+#
+# SUBMITTING YOUR EXAM:
+# When you are finished, upload BOTH the schema and the XML file to Canvas using the posted upload point for this exam. 
+# You may zip the files to submit them just as you have done for homework assignments.
+
+start = xml
+xml = element xml {metadata, recipe}
+metadata = element metadata {title, author, editor, source, time, yield} #yield was not listed as an element within metadata therefore it was not recognized in the xml 
+yield = element yield {text}
+title = element title {text} #this said "txt" instead of "text"
+author = element author {id, text}
+editor = element editor {id, text}
+source = element source {url, text} #did not have the url attribute listed as an option for possibilities with a source element
+time = element time {dur, text}
+id = attribute id {xsd:ID} #attribute was defined as "is" instead of "id"
+url = attribute url {xsd:anyURI}
+dur = attribute dur {xsd:duration}
+
+recipe = element recipe {ingList, prep}
+ingList = element ingList {heading, ing+}
+heading = element heading {text}
+ing = element ing {id, meas?, unit?, mixed{alt*}}
+alt = element alt {meas, unit, text}
+meas = attribute meas {xsd:float}
+unit = attribute unit {"cup" | "T" | "t"  | "F" | "C" | "inch" | "pint"} #pint was an unlisted value of unit
+prep = element prep {heading, step+}#there was previously a ? meaning only 0 or 1 which is not possible as there are several steps listed here seperately
+step = element step {n, mixed{(combine | equip | equipUse | ingUse)*}}#the pipe needed "*" on the end of it
+equip = element equip {id+, mixed{(equipUse | temp | setting | size | time)*}} #temp was an unlisted element that can appeare in equip tag #added "?" to the id since not every occurence of equip has an id attribute #size element was not included in possible tags to be embedded in equip
+setting= element setting {text}#there was no element defining setting 
+temp = element temp {meas, unit, text}
+size = element size {depth, unit, text}
+depth = attribute depth {xsd:float}
+equipUse = element equipUse {ref, mixed{(temp | size | equip | equipUse | ingUse | setting | time)*}}
+ingUse = element ingUse {ref, meas?, unit?, text}#meas and unit were reuquired but do not always occur in this element. Added the question mark to say it can be there 0 or 1 time. 
+ref = attribute ref {xsd:IDREFS}
+combine = element combine {ref, mixed{(ingUse)}} #added a mixed pipe to allow for text as well as the element ingUse to be found inside the combine element
+n = attribute n {xsd:integer}#was asking for "xsd:date" when it is looking for integers to number the steps
+
+
+
+
+
+
+
+
+
+
