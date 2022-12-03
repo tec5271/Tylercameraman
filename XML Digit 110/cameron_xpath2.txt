@@ -1,0 +1,27 @@
+	
+A. //occupation/@type = 1855 item
+	
+B. //occupation/@type => distinct-values() = 15 item
+	
+C. //occupation/@type => distinct-values() => count() =15
+	
+D. //occupation[@type="artist"] = 66 item
+		
+E. //person[occupation[@type="artist"]] =41 items or /person[occupation[@type="artist"]]/persName[1] =41
+		
+F. //person[@sex="f"]=327
+
+G. //person[@sex="f"][occupation[@type="artist"]] = 4 item
+		
+H. //person[occupation[@subtype="engraver"]
+		
+I. //person[occupation[@subtype="engraver"]and birth/@when="1787"]= 1 item
+		
+J. //person[occupation[@subtype="engraver"]]/birth/@* = 8 items
+		
+K. //person[occupation[@subtype="engraver"]]/birth/@*! string() = 8 item
+	
+L. //person/occupation[1]= 749 item
+-one item with a bunch of sub and main titles
+M. (//person/occupation)[1]= 1 item
+-This one just shows one and the one scholar that is said the most.

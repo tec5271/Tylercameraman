@@ -1,0 +1,28 @@
+
+		//attribute()=25854
+	
+		//element(listPerson)=6 items
+	
+		//element(div)[listPerson]=4 items
+	
+		//element(div)[listPlace]=1 item
+	
+		//element(listPlace)/child::place=204
+	
+		The one has a child element and one has a div element that is looking for any div element with listPlace
+	
+		//element()/child::div=9 items
+	
+
+		//*[@sortKey]=19 items
+
+		//element(person)=1223
+	
+		//element(person)/@sex=1107
+	
+		//person[@sex]-> count()- 1 item
+	
+		//person[@sex]=> count() div //person => count()
+	Write an XPath expression to find the number of <person> elements coded as female with @sex="f".
+
+	Use the count() function and division in XPath once again to find out the proportion of persons coded female among all the persons coded with @sex attributes.

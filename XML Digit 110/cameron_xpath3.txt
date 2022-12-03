@@ -1,0 +1,30 @@
+Part 1:
+
+A. //element(sd) =524 items or //sd= 524 item
+
+B. //sd[contains(.,"Russian")]= 11 item
+   
+C. /Scene/child::Heading/following-sibling::sd[1] = 172 item
+
+D. /Scene/child::Heading/following-sibling::sd[1][contains(., "computer")] = 7 item
+
+E. //Scene [not(sd)]= 2 item
+
+Part 2:
+
+A. //sp = 649 items or //sp ! string()
+
+B. //sp ! text() = 649 items
+
+C. //sp ! text() ! string-length() = item
+
+D. //sp ! text() ! string-length() => max() = 466
+
+E. //sp [string-length()=466]= 1 item
+
+Part 3:
+A. //spk[parent::sp [contains(.,"Iraq")]] = 1 item
+
+B. //spk ! lower-case(.) = 674 item
+
+C. //spk !substring(., 2) ! lower-case(.) 674 item

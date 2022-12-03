@@ -1,0 +1,61 @@
+
+
+la actriz 
+la cientifica
+el cocinero
+el reportero
+la contadora
+el psicologo
+la maestra
+el carpintero
+
+
+
+mi experiencia es en digitales humanidades. Me gusta trabajo con computadoras. Que es el salario?
+yo deseo obtener este puesto porque solicito aqui tener exito. Quien es el jefe o la jefa?
+Esta las reunions teletrabajo? mi otro interesas es un disenador yo dejo mi trabaja a buscar un nuevo ambiente
+yo el aumento de sueldo 
+
+
+
+
+
+I am going to the cinema tomorrow 
+I am going to go to the cinema tomorrow
+I will go to the cinema tomorrow
+I hope to go to the cinema tomorrow
+
+tendras saldras podras recibiras vendran resolveras deberas recibras dira vendran
+
+
+Iremos a la reunion en jueves
+Hay estran treinta personas en la clase
+Vendre a las nueve
+El jefe de Delia sere Esteban
+
+Ella ira a una casa para celebrar el dia festivo. Ella tendra un bien tiempo con familia y amigos 
+
+Habre terminado
+Habra hacido
+Habra llegado
+Habre vuelvido
+Habran recibido
+Habras decidido'
+
+//name/@ref  !substring (.,1) items 424 
+//div[@type="entry"] items 513
+//name[@ref='#flower'] items 40
+//persName[contains(., "Drum")] items 240
+//persName[contains(., "Drum")][preceding-sibling::date] items 3
+
+
+
+
+
+
+
+
+
+
+
+
